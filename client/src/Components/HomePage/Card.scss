@@ -1,0 +1,33 @@
+@import "../../utils//utils";
+.card {
+  height: 430px;
+  box-shadow: $shadow;
+  flex-basis: 25%;
+  width: 300px;
+  border-radius: 5px;
+  background-color: $secondary-colour;
+  margin: 0 1rem;
+  header {
+    padding: 10px;
+    border-bottom: 1.5px solid $colour1;
+  }
+  main {
+    padding: 15px;
+    height: fit-content;
+    ul {
+      list-style: none;
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  footer {
+    button {
+      width: 40%;
+      color: #fff;
+    }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

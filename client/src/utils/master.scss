@@ -1,0 +1,32 @@
+@import "./utils";
+@media (prefers-color-scheme: dark) {
+  * {
+    font-family: "Open Sans";
+    font-weight: 100;
+    box-sizing: border-box;
+    color: $text-colour;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  .btn1 {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn1:hover {
+    transform: scale(1.1);
+  }
+  .colour1 {
+    background-color: lighten($color: #cb2d6f, $amount: 10);
+    // background-color: lighten($color: mediumspringgreen, $amount: 10);
+  }
+  .colour2 {
+    background-color: lighten($color: #fba92c, $amount: 10);
+  }
+}

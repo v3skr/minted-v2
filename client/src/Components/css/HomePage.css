@@ -1,0 +1,114 @@
+.home {
+  background-color: tomato;
+  height: 1000px;
+  padding: 1rem 2rem;
+  color: #333;
+}
+
+.home .two-card {
+  padding: 1rem 0;
+  margin-top: 4rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
+  justify-items: center;
+}
+
+.home .text-con {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  background-color: bisque;
+  border-radius: 4px;
+  margin-top: 1rem;
+  -webkit-animation: a2 1.5s forwards;
+          animation: a2 1.5s forwards;
+}
+
+.home .text-con header h3 {
+  border-bottom: 2px solid tomato;
+  font-weight: 100;
+  padding: 10px 10px 3px 10px;
+}
+
+.home .text-con header p {
+  padding: 10px;
+  line-height: 23px;
+}
+
+.home .title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 3rem;
+  margin-top: 1rem;
+  padding: 10px 0;
+  -webkit-animation: a1 1.5s forwards;
+          animation: a1 1.5s forwards;
+}
+
+@-webkit-keyframes a1 {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  25% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    border-bottom: 2px solid bisque;
+  }
+}
+
+@keyframes a1 {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  25% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    border-bottom: 2px solid bisque;
+  }
+}
+
+@-webkit-keyframes a2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes a2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

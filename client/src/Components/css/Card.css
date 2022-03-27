@@ -1,0 +1,40 @@
+.card {
+  height: 400px;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  width: 300px;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  background-color: bisque;
+  margin: 0 1rem;
+}
+
+.card header {
+  padding: 10px;
+  border-bottom: 4px solid tomato;
+}
+
+.card main {
+  padding: 15px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.card main ul {
+  list-style: none;
+}
+
+.card main ul li {
+  margin-bottom: 1rem;
+}
+
+.card footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

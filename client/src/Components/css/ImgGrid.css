@@ -1,0 +1,7 @@
+.img-grid {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background-color: bisque;
+  border-radius: 5px;
+  margin: 0 1rem;
+}

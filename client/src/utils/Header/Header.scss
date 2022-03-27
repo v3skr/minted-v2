@@ -1,0 +1,48 @@
+@import "../utils/";
+.header {
+  background-color: $secondary-colour;
+  height: 70px;
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  color: $text-colour;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: $shadow2;
+  h1 {
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding: 0 20px;
+  }
+  .links {
+    right: 0;
+    padding: 0 10px;
+    position: absolute;
+    display: flex;
+    list-style: none;
+    li {
+      margin: 0 10px 0 0;
+      transition: $transition;
+      a {
+        color: $secondary-colour;
+        background-color: $colour1;
+        padding: 7px 15px;
+        border-radius: 3px;
+        font-weight: normal;
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    height: 60px;
+    justify-content: start;
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
+}
