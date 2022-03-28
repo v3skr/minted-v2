@@ -11,6 +11,7 @@
   justify-content: center;
   box-shadow: $shadow2;
   h1 {
+    cursor: pointer;
     font-weight: 100;
     letter-spacing: 1px;
     padding: 0 20px;
@@ -29,7 +30,6 @@
         background-color: $colour1;
         padding: 7px 15px;
         border-radius: 3px;
-        font-weight: normal;
       }
       &:hover {
         transform: scale(1.1);
