@@ -11,6 +11,7 @@ const LoginCard = () => {
       <main>
         <input type="email" placeholder="Email" />
         <input type="password" placeholder="Password" />
+        {/* <i className="fas fa-eye"></i> */}
         <a href="">Forgot Password ?</a>
       </main>
       <footer>
