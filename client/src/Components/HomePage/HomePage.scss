@@ -1,8 +1,8 @@
 @import "../../utils//utils";
 .home {
   background-color: $primary-colour;
-  padding: 1rem 2rem;
   color: $text-colour;
+  padding: 1rem 2rem;
   .main {
     display: flex;
     width: 100%;
@@ -13,10 +13,9 @@
       width: 100%;
       padding: 10px 0;
       text-align: center;
-      border-bottom: solid 2px $secondary-colour;
       color: $secondary-colour;
       font-size: 2rem;
-      font-weight: normal;
+      font-weight: 300;
       margin: 2rem 0;
     }
   }
@@ -29,36 +28,29 @@
     justify-content: space-around;
   }
   .text-con {
-    box-shadow: $shadow3;
+    box-shadow: $shadow5;
     height: fit-content;
     width: fit-content;
     padding: 10px;
-    background-color: $secondary-colour;
     border-radius: 4px;
     margin-top: 1rem;
     animation: a2 1.5s forwards;
     header {
       h3 {
-        border-bottom: 2px solid $colour1;
         font-weight: 300;
         font-size: 2.5rem;
         padding: 10px 10px 3px 10px;
       }
       p {
         font-size: 1rem;
-        font-weight: 400;
+        font-weight: 300;
         padding: 10px 5px;
       }
     }
   }
   .title {
-    text-align: center;
-    font-weight: normal;
-    font-size: 3rem;
-    margin-top: 1rem;
-    padding: 10px 0;
+    @extend .title;
     animation: a1 1.5s forwards;
-    color: $secondary-colour;
   }
 }
 @keyframes a1 {
@@ -73,7 +65,6 @@
   }
   100% {
     transform: translateY(0px);
-    border-bottom: 2px solid $secondary-colour;
   }
 }
 @keyframes a2 {
@@ -102,7 +93,7 @@
       header {
         text-align: center;
         h3 {
-          border-bottom: 1.5px solid $colour1;
+          border-width: 1.5px;
           font-size: 1.5rem;
         }
         p {

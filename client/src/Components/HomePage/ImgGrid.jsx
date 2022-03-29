@@ -6,7 +6,7 @@ const ImgGrid = () => {
   return (
     <div className="img-grid">
       <Image
-        link="https://cdn.pixabay.com/photo/2017/05/11/19/44/fresh-fruits-2305192__340.jpg"
+        link="https://cdn.pixabay.com/photo/2017/01/31/09/30/raspberries-2023404__480.jpg"
         name="Green Grapes"
       />
       <Image

@@ -1,14 +1,14 @@
 @import "../utils";
 
 .footer {
+  // background-color: $secondary-colour;
+  // color: $text-colour;
   position: relative;
   height: 200px;
-  background-color: $secondary-colour;
   display: flex;
   justify-content: center;
   padding: 1.5rem;
   align-items: center;
-  color: $text-colour;
   h3,
   h5,
   a {
@@ -22,7 +22,7 @@
   ul li {
     margin-bottom: 5px;
     a {
-      color: $text-colour;
+      // color: $text-colour;
       text-decoration: underline;
     }
     padding: 5px 0 0 0;

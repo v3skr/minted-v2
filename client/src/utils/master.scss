@@ -13,8 +13,107 @@
 }
 .colourpink {
   background-color: lighten($color: #cb2d6f, $amount: 10);
-  // background-color: lighten($color: mediumspringgreen, $amount: 10);
 }
 .colouryellow {
   background-color: lighten($color: #fba92c, $amount: 10);
+}
+.colourgreen {
+  background-color: springgreen;
+}
+.dark {
+  background-color: $secondary-colour;
+  color: $text-colour;
+}
+.light {
+  background-color: $text-colour;
+  color: $secondary-colour;
+}
+.btndark {
+  color: $secondary-colour;
+  background-color: $colour1;
+}
+.btnlight {
+  color: $text-colour;
+  background-color: $colour3;
+}
+.borderlight {
+  border-bottom: 2px solid $secondary-colour;
+}
+.borderlight2 {
+  border-bottom: 2px solid $colour3;
+}
+.borderdark {
+  border-bottom: 2px solid $text-colour;
+}
+.borderdark2 {
+  border-bottom: 2px solid $colour1;
+}
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: $shadow5;
+  padding: 1rem;
+  header {
+    h2 {
+      color: $secondary-colour;
+      font-weight: 300;
+    }
+    height: 10%;
+    text-align: center;
+    border-bottom: 1px solid $secondary-colour;
+  }
+  main {
+    position: relative;
+    height: 70%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+      color: $secondary-colour;
+      text-decoration: underline;
+    }
+    input {
+      border: none;
+      outline: none;
+      box-shadow: $shadow6;
+      color: $secondary-colour;
+      font-size: 1rem;
+      width: 95%;
+      border-radius: 3px;
+      font-weight: 400;
+      padding: 8px 10px;
+      margin: 1rem 0 0 0;
+    }
+    a {
+      font-size: 13px;
+      margin-top: 2rem;
+    }
+  }
+  footer {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.input {
+  border: none;
+  outline: none;
+  box-shadow: $shadow6;
+  color: $secondary-colour;
+  font-size: 1rem;
+  border-radius: 3px;
+  font-weight: 400;
+  padding: 8px 10px;
+  margin: 1rem 0 0 0;
+}
+.title {
+  text-align: center;
+  font-weight: 300;
+  font-size: 3rem;
+  margin-top: 1rem;
+  padding: 10px 0;
+  color: $secondary-colour;
 }

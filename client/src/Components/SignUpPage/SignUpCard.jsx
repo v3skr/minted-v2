@@ -17,7 +17,7 @@ const SignUpCard = () => {
         <input type="text" placeholder="Address" />
       </main>
       <footer>
-        <button className="btn1 colouryellow">Sign Up</button>
+        <button className="btn1 btnlight">Sign Up</button>
       </footer>
     </div>
   );

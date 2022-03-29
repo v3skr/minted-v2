@@ -1,0 +1,132 @@
+@import "../../utils/utils";
+@import "../../utils/master";
+.customerpage {
+  height: fit-content;
+  padding: 1rem;
+  .upper {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    h1 {
+      margin: 0 0 1rem 0;
+    }
+    input {
+      @extend .input;
+      width: 40%;
+      padding: 13px;
+      margin: 0;
+    }
+  }
+  .cookgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin: 3rem 0;
+    .cookcard {
+      @extend .card;
+      background-color: #fff;
+      height: 200px;
+      padding: 0;
+      cursor: pointer;
+      transition: $transition;
+      main {
+        width: 100%;
+        height: 80%;
+        margin: 0;
+        img,
+        .overlay {
+          object-fit: cover;
+          border-radius: 5px 5px 0 0;
+          width: 100%;
+          height: 100%;
+        }
+        h3 {
+          position: absolute;
+          font-weight: 300;
+          opacity: 0;
+          color: $text-colour;
+        }
+        .overlay {
+          position: absolute;
+          background-color: #000;
+          opacity: 0;
+          transition: $transition;
+        }
+      }
+      &:hover {
+        transform: scale(1.04);
+      }
+      &:hover .overlay {
+        opacity: 0.6;
+      }
+      &:hover h3 {
+        opacity: 1;
+      }
+      footer {
+        h5,
+        h6 {
+          font-weight: 400;
+        }
+        h5 {
+          font-size: 14px;
+        }
+        h6 {
+          font-size: 10px;
+        }
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .customerpage {
+    .upper {
+      h1 {
+        font-size: 2.5rem;
+      }
+      input {
+        width: 50%;
+      }
+    }
+    .cookgrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+@media (max-width: 768px) {
+  .customerpage {
+    .upper {
+      h1 {
+        font-size: 2rem;
+      }
+      input {
+        width: 60%;
+      }
+    }
+    .cookgrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media (max-width: 600px) {
+  .customerpage {
+    .upper {
+      input {
+        width: 100%;
+      }
+    }
+    .cookgrid {
+      grid-template-columns: repeat(1, 1fr);
+      .cookcard {
+        height: 250px;
+      }
+    }
+  }
+}

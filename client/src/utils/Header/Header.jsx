@@ -1,18 +1,23 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Header.scss";
+import "../../utils/master.scss";
 
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <header className="header">
+    <header className="header light">
       <h1 onClick={() => navigate("/")}>Minted</h1>
       <ul className="links">
         <li>
-          <Link to="/login">Login</Link>
+          <Link to="/login" className="btnlight">
+            Login
+          </Link>
         </li>
         <li>
-          <Link to="/signup">Sign Up</Link>
+          <Link to="/signup" className="btnlight">
+            Sign Up
+          </Link>
         </li>
       </ul>
     </header>

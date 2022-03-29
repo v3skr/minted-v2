@@ -1,15 +1,13 @@
 @import "../utils/";
 .header {
-  background-color: $secondary-colour;
   height: 70px;
   position: sticky;
   z-index: 3;
   top: 0;
-  color: $text-colour;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: $shadow4;
+  box-shadow: $shadow5;
   h1 {
     cursor: pointer;
     font-weight: 100;
@@ -26,8 +24,7 @@
       margin: 0 10px 0 0;
       transition: $transition;
       a {
-        color: $secondary-colour;
-        background-color: $colour1;
+        font-weight: 300;
         padding: 7px 15px;
         border-radius: 3px;
       }
