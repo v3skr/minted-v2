@@ -9,8 +9,13 @@
   .signupcard {
     @extend .logincard;
     width: 50%;
+    header {
+      height: 15%;
+    }
     main {
+      // height: 75%;
       display: grid;
+      // margin: 1rem 0;
       justify-items: center;
       grid-template-columns: repeat(2, 1fr);
     }
@@ -25,12 +30,17 @@
     .signupcard {
       width: 90%;
       height: 600px;
+      header {
+        height: 10%;
+      }
       main {
+        // height: 70%;
+        margin: 1.5rem 0;
         display: flex;
         flex-direction: column;
       }
       footer {
-        height: 20%;
+        height: 10%;
       }
     }
   }

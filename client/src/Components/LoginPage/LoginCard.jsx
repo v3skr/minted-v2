@@ -4,18 +4,19 @@ import "../../utils/master.scss";
 
 const LoginCard = () => {
   return (
-    <div className="logincard">
-      <header>
+    <div className="logincard light">
+      <header className="light borderlight2">
         <h2>Login</h2>
       </header>
-      <main>
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        {/* <i className="fas fa-eye"></i> */}
-        <a href="">Forgot Password ?</a>
+      <main className="light">
+        <input type="email" placeholder="Email" className="light" />
+        <input type="password" placeholder="Password" className="light" />
+        <a href="" className="light">
+          Forgot Password ?
+        </a>
       </main>
       <footer>
-        <button className="btn1 colourpink">Login</button>
+        <button className="btn1 btnlight">Login</button>
       </footer>
     </div>
   );

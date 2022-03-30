@@ -9,13 +9,22 @@
 }
 .logincard {
   @extend .card;
+  padding: 10px 1rem;
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13%;
+  }
+  main {
+    margin: 0;
+    height: 70%;
+  }
+  footer {
+    height: 17%;
+  }
   height: 400px;
   width: 350px;
-  footer {
-    button {
-      color: $text-colour;
-    }
-  }
 }
 @media (max-width: 500px) {
   .login {

@@ -4,6 +4,7 @@ import HomePage from "./Components/HomePage/HomePage";
 import LoginPage from "./Components/LoginPage/LoginPage";
 import SignUpPage from "./Components/SignUpPage/SignUpPage";
 import CustomerPage from "./Components/CustomerPage/CustomerPage";
+import CookPage from "./Components/CookPage/CookPage";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./app.css";
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/cooks" element={<CustomerPage />} />
+          <Route path="/cook" element={<CookPage />} />
         </Routes>
         <Footer />
       </Router>

@@ -2,19 +2,19 @@ import React from "react";
 
 const SignUpCard = () => {
   return (
-    <div className="signupcard">
-      <header>
+    <div className="signupcard light">
+      <header className="borderlight2">
         <h2>Sign Up</h2>
       </header>
-      <main>
-        <input type="text" placeholder="First Name" />
-        <input type="text" placeholder="Surname" />
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Username" />
-        <input type="text" placeholder="Password" />
-        <input type="text" placeholder="Confirm Password" />
-        <input type="text" placeholder="Phone Number" />
-        <input type="text" placeholder="Address" />
+      <main className="light">
+        <input type="text" className="light" placeholder="First Name" />
+        <input type="text" className="light" placeholder="Surname" />
+        <input type="text" className="light" placeholder="Email" />
+        <input type="text" className="light" placeholder="Username" />
+        <input type="text" className="light" placeholder="Password" />
+        <input type="text" className="light" placeholder="Confirm Password" />
+        <input type="text" className="light" placeholder="Phone Number" />
+        <input type="text" className="light" placeholder="Address" />
       </main>
       <footer>
         <button className="btn1 btnlight">Sign Up</button>

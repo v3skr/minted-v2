@@ -1,6 +1,6 @@
 import React from "react";
-import "./LoginPage.scss";
 import LoginCard from "./LoginCard";
+import "./LoginPage.scss";
 
 const LoginPage = () => {
   return (
