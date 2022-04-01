@@ -6,9 +6,11 @@ const HomePageUpper = () => {
   return (
     <div>
       <h1 className="title">Welcome To Minted</h1>
-      <div className="text-con light">
+      <div className={`text-con ${true ? "dark" : "light"}`}>
         <header>
-          <h3 className="borderlight2">What is Minted</h3>
+          <h3 className={`${true ? "dark borderdark2" : "light borderlight2"}`}>
+            What is Minted
+          </h3>
           <p>
             Minted is a food platform that offers flexibility, relaiability and
             consitancy. Home made food, desserts, drinks etc deliverd to your

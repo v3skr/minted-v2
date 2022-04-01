@@ -1,6 +1,7 @@
 $text-colour: #fff;
 $secondary-colour: #333;
 $primary-colour: bisque;
+$primary-dark: #1b1b1b;
 $colour1: springgreen;
 $colour2: lighten(
   $color: #fba92c,
@@ -16,4 +17,6 @@ $shadow3: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 $shadow4: rgba(0, 0, 0, 0.2) 0px 10px 20px, rgba(0, 0, 0, 0.12) 0px 10px 15px;
 $shadow5: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 $shadow6: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+$shadow7: rgb(0, 0, 0, 0.1) 1px 1px 6px 0px inset,
+  rgba(0, 0, 0, 0.1) -1px -1px 6px 0px inset;
 $transition: all 0.2s;

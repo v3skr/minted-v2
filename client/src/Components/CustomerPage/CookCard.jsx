@@ -3,7 +3,7 @@ import "./CustomerPage.scss";
 
 const CookCard = () => {
   return (
-    <div className="cookcard">
+    <div className={`cookcard ${true ? "dark" : "light"}`}>
       <main>
         <div className="overlay"></div>
         <h3>view</h3>

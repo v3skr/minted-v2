@@ -9,9 +9,13 @@ const HomePage = () => {
     <div className="home">
       <HomePageUpper />
       <div className="main">
-        <h3 className="sub-title">Some Examples</h3>
+        <h3 className={`${true ? "lighttext" : "darktext"} sub-title `}>
+          Some Examples
+        </h3>
         <ImgGrid />
-        <h3 className="sub-title">User Feedback and Reviews</h3>
+        <h3 className={`${true ? "lighttext" : "darktext"} sub-title `}>
+          User Feedback and Reviews
+        </h3>
         <Feedback />
       </div>
     </div>

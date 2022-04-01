@@ -6,16 +6,16 @@ import "../../utils/master.scss";
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <header className="header light">
+    <header className={`header ${true ? "dark" : "light"}`}>
       <h1 onClick={() => navigate("/")}>Minted</h1>
       <ul className="links">
         <li>
-          <Link to="/login" className="btnlight">
+          <Link to="/login" className={`${true ? "btndark" : "btnlight"}`}>
             Login
           </Link>
         </li>
         <li>
-          <Link to="/signup" className="btnlight">
+          <Link to="/signup" className={`${true ? "btndark" : "btnlight"}`}>
             Sign Up
           </Link>
         </li>

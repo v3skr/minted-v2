@@ -4,7 +4,7 @@ import "../../utils/master.scss";
 
 const Footer = () => {
   return (
-    <div className="footer light">
+    <div className={`footer ${true ? "dark" : "light"}`}>
       <h3>CopyRight Reserved</h3>
       <ul>
         <li>
@@ -14,17 +14,17 @@ const Footer = () => {
           <h5>12345678900</h5>
         </li>
         <li>
-          <a href="" className="light">
+          <a href="" className={`${true ? "lighttext" : "textdark"}`}>
             Feedback
           </a>
         </li>
         <li>
-          <a href="" className="light">
+          <a href="" className={`${true ? "lighttext" : "textdark"}`}>
             Have a suggestion?
           </a>
         </li>
         <li>
-          <a href="" className="light">
+          <a href="" className={`${true ? "lighttext" : "textdark"}`}>
             Spotted a bug
           </a>
         </li>

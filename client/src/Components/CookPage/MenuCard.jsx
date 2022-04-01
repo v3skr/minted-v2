@@ -4,8 +4,8 @@ import "./CookPage.scss";
 
 const MenuCard = () => {
   return (
-    <div className="menu-card light">
-      <header className="borderlight2">
+    <div className={`menu-card ${true ? "dark" : "light"}`}>
+      <header className={true ? "borderdark2" : "borderlight2"}>
         <h3>name</h3>
         <h4>£10.00</h4>
       </header>

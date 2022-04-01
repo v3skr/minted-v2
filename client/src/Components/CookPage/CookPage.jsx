@@ -7,7 +7,7 @@ const CookPage = () => {
   return (
     <div className="max-con">
       <div className="cookpage">
-        <header className="light">
+        <header className={true ? "dark" : "light"}>
           <div className="info">
             <h2 className="title">Hesam's Minted</h2>
             <ul>
@@ -46,7 +46,7 @@ const CookPage = () => {
             alt=""
           />
         </header>
-        <h1 className="title">Our Menu</h1>
+        <h1 className={`title ${true ? "lighttext" : "darktext"}`}>Our Menu</h1>
         <main className="menu-grid">
           <MenuCard />
           <MenuCard />

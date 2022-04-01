@@ -1,8 +1,4 @@
 @import "./utils/_utils.scss";
-html,
-body {
-  background-color: bisque;
-}
 a {
   text-decoration: none;
 }

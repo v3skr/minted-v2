@@ -1,22 +1,36 @@
 import React from "react";
 import "./LoginPage.scss";
 import "../../utils/master.scss";
+import { Link } from "react-router-dom";
 
 const LoginCard = () => {
   return (
-    <div className="logincard light">
-      <header className="light borderlight2">
+    <div className={`logincard ${true ? "dark" : "light"}`}>
+      <header className={`${true ? "dark borderdark2" : "light borderlight2"}`}>
         <h2>Login</h2>
       </header>
-      <main className="light">
-        <input type="email" placeholder="Email" className="light" />
-        <input type="password" placeholder="Password" className="light" />
-        <a href="" className="light">
+      <main className={`${true ? "dark" : "light"}`}>
+        <input
+          type="email"
+          placeholder="Email"
+          className={`${true ? "dark shadow7" : "light"}`}
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          className={`${true ? "dark shadow7" : "light"}`}
+        />
+        <Link
+          to="/reset-password"
+          className={`${true ? "lighttext" : "textdark"}`}
+        >
           Forgot Password ?
-        </a>
+        </Link>
       </main>
       <footer>
-        <button className="btn1 btnlight">Login</button>
+        <button className={`btn1  ${true ? "btndark" : " btnlight"}`}>
+          Login
+        </button>
       </footer>
     </div>
   );

@@ -28,9 +28,18 @@
   background-color: $text-colour;
   color: $secondary-colour;
 }
+.darktext {
+  color: $secondary-colour;
+  font-weight: 300;
+}
+.lighttext {
+  color: $text-colour;
+  font-weight: 300;
+}
 .btndark {
   color: $secondary-colour;
   background-color: $colour1;
+  font-weight: 500;
 }
 .btnlight {
   color: $text-colour;
@@ -39,14 +48,32 @@
 .borderlight {
   border-bottom: 2px solid $secondary-colour;
 }
+.bg-dark {
+  background-color: $primary-dark;
+}
+.bg-light {
+  background-color: $primary-colour;
+}
+.shadow5 {
+  box-shadow: $shadow5;
+}
+.shadow7 {
+  box-shadow: $shadow7;
+}
 .borderlight2 {
   border-bottom: 2px solid $colour3;
+}
+.borderlight3 {
+  border: 2px solid $colour3;
 }
 .borderdark {
   border-bottom: 2px solid $text-colour;
 }
 .borderdark2 {
   border-bottom: 2px solid $colour1;
+}
+.borderdark3 {
+  border: 2px solid $colour1;
 }
 .active-icon {
   color: $colour1;
@@ -72,6 +99,16 @@
   background-color: #000;
   opacity: 0;
   transition: $transition;
+}
+.flex-center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .card {
   border-radius: 5px;
@@ -102,7 +139,7 @@
     input {
       border: none;
       outline: none;
-      box-shadow: $shadow6;
+      // box-shadow: $shadow6;
       // color: $secondary-colour;
       font-size: 1rem;
       width: 95%;
@@ -126,8 +163,8 @@
 .input {
   border: none;
   outline: none;
-  box-shadow: $shadow6;
-  color: $secondary-colour;
+  // box-shadow: $shadow6;
+  // color: $secondary-colour;
   font-size: 1rem;
   border-radius: 3px;
   font-weight: 400;
@@ -140,5 +177,4 @@
   font-size: 3rem;
   margin-top: 1rem;
   padding: 10px 0;
-  color: $secondary-colour;
 }

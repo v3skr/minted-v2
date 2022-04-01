@@ -27,7 +27,6 @@
     margin: 3rem 0;
     .cookcard {
       @extend .card;
-      background-color: #fff;
       height: 200px;
       padding: 0;
       cursor: pointer;
@@ -46,7 +45,6 @@
           position: absolute;
           font-weight: 300;
           opacity: 0;
-          color: $text-colour;
         }
       }
       &:hover {

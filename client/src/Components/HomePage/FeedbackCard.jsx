@@ -4,16 +4,22 @@ import "../../utils/master.scss";
 
 const FeedbackCard = ({ user, userPic, ratings }) => {
   return (
-    <div className="feedbackcard light">
-      <header className="borderlight">
+    <div className={`feedbackcard ${true ? "dark" : "light"}`}>
+      <header className={`${true ? "borderdark" : "borderlight"}`}>
         <div className="left">
-          <img src={userPic} alt=""  />
-          <h3>{user}</h3>
+          <img
+            src={userPic}
+            alt=""
+            className={`${true ? "borderdark3" : "borderlight3"}`}
+          />
+          <h3 className={`${true ? "lighttext" : "darktext"}`}>{user}</h3>
         </div>
         <h2>{ratings}</h2>
       </header>
       <main>
-        <h2 className="title">" Best Service Ever "</h2>
+        <h2 className={`${true ? "lighttext" : "darktext"} `}>
+          " Best Service Ever "
+        </h2>
       </main>
     </div>
   );
